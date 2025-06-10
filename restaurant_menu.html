@@ -2,16 +2,26 @@
 <html>
     <head>
         <title>
-            Welcome to Restaraunt Name!
+            Welcome to Restaurant Name!
         </title>
         <style>
-            
+            header
+            {
+                background-color: rgb(255, 220, 196);
+            }
+            main{
+                background-color: rgb(189, 249, 255);
+            }
+            footer
+            {
+                background-color: rgb(255, 241, 192);
+            }
         </style>
     </head>
     <body>
         <header>
             <img id="header-img" src="" alt="">
-            <h1>Restaraunt Name</h1>
+            <h1>Restaurant Name</h1>
             <nav>
                 
                 {
@@ -51,10 +61,10 @@
             <h2>Place your Order!</h2>
             <section>
                 <form>
-                    <label for ><input type="" ></label>
-                    <label for ><input type="" ></label>
-                    <textarea name="requests" id=""></textarea>
-                    <input type="button">
+                    <label for ><input type="number" min="0" max="3"></label><br>
+                    <label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><br>
+                    <textarea name="requests" id=""></textarea><br>
+                    <input type="submit">
                 </form>
             </section>
         </main>
