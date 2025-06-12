@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Welcome to Restaurant Name!
+            SUSHI by SAI
         </title>
         <style>
             body{
@@ -13,65 +13,87 @@
                 background-color: rgb(255, 255, 255);
             }
             main{
-                background-color: rgb(189, 249, 255);
+                background-color: rgb(255, 189, 189);
+                text-align: center;
             }
             footer
             {
-                background-color: rgb(255, 241, 192);
+                background-color: rgb(165, 62, 62);
+            }
+            hr {
+                border-width: 10px;
+                border-color: brown;
+            }
+            #final{
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+            li{
+                display: inline;
             }
         </style>
     </head>
     <body>
         <header>
-            <img id="header-img" src="image.png" alt="" width="10%" height="10%">
-            <h1>sushi by sai</h1>
+            <img id="header-img" src="logo.png" alt="Logo" width="10%" height="10%">
+            <img id="header-img" src="title.png" alt="SUSHI by SAI" width="25%" height="25%">
+            <h3>Contents:</h3>
             <nav>
                 <ul>
                     <li><a href="#menue">Menu</a></li>
+                    |
                     <li><a href="#order-form">Order Form</a></li>
             </nav>
         </header>
         <main>
-            <h2>Menu</h2>
+            <hr><br>
+            <h2>MENU</h2>
             <section>
-                <article>
+                <article id="truffle">
                     <figure>
-                        <img src="" width="" alt=""/>
+                        <img src="truffle.png" width="20%" alt="Salmon truffle roll"/>
                         <figcaption></figcaption>
                     </figure>
-                    <h3>salmon truffle roll</h3>
-                    <p>salmon, cream cheese, tempura flakes, truffle dynamite salad. topped with mango and spicy mayo</p>
+                    <h3>~ salmon truffle roll</h3>
+                    <p><i><b>price:$24 </b>|</i> salmon, cream cheese, tempura flakes, truffle dynamite salad. topped with mango and spicy mayo</p>
                 </article>
-                <article>
+                <article id = "calamari">
                     <figure>
-                        <img src="" width="" alt=""/>
+                        <img src="calamari.png" width="20%" alt="calamari roll"/>
                         <figcaption></figcaption>
                     </figure>
-                    <h3>calamari roll</h3>
-                    <p>shrimp tempura, salmon tempura, calamari tempura and avacado. wrapped in nori and rice.</p>
+                    <h3>~ calamari roll</h3>
+                    <p><i><b>price:$20 </b>|</i> shrimp tempura, salmon tempura, calamari tempura and avacado. wrapped in nori and rice.</p>
                 </article>
-                <article>
+                <article id="crunch">
                     <figure>
-                        <img src="" width="" alt=""/>
+                        <img src="crunch.png" width="20%" alt="kani crunch roll"/>
                         <figcaption></figcaption>
                     </figure>
-                    <h3>kani krunch roll</h3>
-                    <p>salmon, kani tempura, tuna and cream cheese. topped with crunchy kani and sesame seeds.</p>
+                    <h3>~ kani crunch roll</h3>
+                    <p><i><b>price:$22 </b>|</i> salmon, kani tempura, tuna and cream cheese. topped with crunchy kani and sesame seeds.</p>
                 </article>
             </section>
-            <br><hr><br>
-            <h2>Place your Order!</h2>
+            <br><br><hr>
+            <h2>PLACE YOUR ORDER</h2>
             <section>
                 <form>
-                    <label for ><input type="number" min="0" max="3"></label><br>
-                    <label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><label for ><input type="radio" name="option"></label><br>
-                    <textarea name="requests" id=""></textarea><br>
+                    <label for="truffle" ># of Salmon Truffle Rolls: <input type="number" min="0" ></label><br><br>
+                    <label for="calamari" ># of Calamari Rolls:<input type="number" min="0" ></label><br><br>
+                    <label for="crunch" ># of Kani Crunch Rolls:<input type="number" min="0"></label><br><br>
+                    <label for="sides" >Sides:<input type="checkbox" name="option">Wasabi</label><label for ></label><input type="checkbox" name="option">Soy Sauce</label><label for ><input type="checkbox" name="option">Ginger</label><label for ><input type="checkbox" name="option">Edamame</label><br><br>
+                    Special Requests:<br><textarea name="requests" placeholder="(100 words maximum)" id="requests"></textarea><br>
                     <input type="submit">
+                    <h3>thank you!</h3>
+                    
                 </form>
             </section>
+            <hr>
         </main>
         <footer>
-            <p>Made with love by @sairoy08</p>
+            <br>
+            <p id="final">Made with love by <b>@sairoy</b></p>
+            <br>
         </footer>
     </body>
 </html>
